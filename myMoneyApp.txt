@@ -1,0 +1,23 @@
+cd Desktop
+mkdir my-money-app && cd my-money-app
+mkdir backend && cd backend
+#package.json# npm init -y 
+#dependencias prod# npm i --save express@4.14.0 mongoose@4.7.0 body-parser@1.15.2 lodash@4.17.4 mongoose-paginate@5.0.3 express-query-int@1.0.1 node-restful@0.2.5 pm2@2.1.5 
+#dependencias dev # npm i --save-dev nodemon@1.11.0
+code .
+
+package.json
+  "name": "my-money-backend",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name my-money-backend"
+  },
+
+.gitignore
+  node_modules
+  *.log
+
+
+#### já configurado
+rm -rf node_modules/
+npm i
